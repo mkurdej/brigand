@@ -6,6 +6,7 @@
 =================================================================================================**/
 #pragma once
 
+#include <brigand/functions/lambda/apply.hpp>
 #include <brigand/types/has_placeholders.hpp>
 #include <type_traits>
 
