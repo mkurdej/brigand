@@ -68,9 +68,11 @@ set(ALGORITHMS_GROUP
     brigand/algorithms/partition.hpp
     brigand/algorithms/remove.hpp
     brigand/algorithms/reverse.hpp
+    brigand/algorithms/select.hpp
     brigand/algorithms/sort.hpp
+    brigand/algorithms/stable_partition.hpp
     brigand/algorithms/transform.hpp
-    brigand/algorithms/select.hpp)
+    )
 
 set(ALGORITHMS_DETAIL_GROUP
     brigand/algorithms/detail/find.hpp)

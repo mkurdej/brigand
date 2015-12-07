@@ -23,3 +23,5 @@ brigand::partition<full_list, brigand::quote<is_odd>> partition_test3 = brigand:
 brigand::partition<size_t_list<>, brigand::quote<is_odd>> partition_test4 = brigand::pair<size_t_list<>, size_t_list<>>{};
 
 brigand::partition<brigand::list<int, float, char, double>, std::is_floating_point<brigand::_1>> partition_test5 = brigand::pair<brigand::list<float, double>, brigand::list<int, char>>{};
+
+brigand::stable_partition<full_list, brigand::quote<is_odd>> stable_partition_test1 = brigand::pair<odd_list, even_list>{};
