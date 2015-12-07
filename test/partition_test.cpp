@@ -1,6 +1,7 @@
 #include <brigand/types/integer.hpp>
 #include <brigand/sequences/list.hpp>
 #include <brigand/algorithms/partition.hpp>
+#include <brigand/algorithms/stable_partition.hpp>
 #include <brigand/functions/lambda/bind.hpp>
 #include <brigand/functions/lambda/quote.hpp>
 #include <type_traits>
