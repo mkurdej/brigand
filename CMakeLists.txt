@@ -4,6 +4,8 @@ project(brigand)
 
 enable_testing()
 
+include(script/add_death_test.cmake)
+
 if((CMAKE_CXX_COMPILER_ID MATCHES "Clang") OR CMAKE_COMPILER_IS_GNUCXX)
     set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra -pedantic -Wold-style-cast")
@@ -282,8 +284,10 @@ endif()
 source_group(tests FILES ${test_files})
 
 add_executable(brigand_test ${test_files})
-
 add_test(brigand brigand_test)
+
+add_library(always_fail1 test/always_fail1.cpp)
+add_death_test(always_fail1)
 
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/brigand
     DESTINATION .
